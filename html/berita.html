@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita</title>
+    <link rel="stylesheet" href="./../src/output.css" />
+    <!-- google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <!-- google font end -->
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- aos end -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-black shadow-md fixed w-full top-0 z-10">
+      <div class="max-w-7xl py-2 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold text-white"><img src="./../src/images/logo.png" alt="" class="w-[150px]" /></a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="flex items-center md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Navbar Links (Desktop) -->
+          <div class="hidden md:flex items-center space-x-4">
+            <a href="index.html" class="text-white hover:text-gray-400 transition-all duration-300 ease-in-out">Home</a>
+            <a href="berita.html" class="text-white hover:text-gray-400 transition-all duration-300 ease-in-out">Berita</a>
+            <a href="#" class="text-white hover:text-gray-400 transition-all duration-300 ease-in-out">Services</a>
+            <a href="#" class="text-white hover:text-gray-400 transition-all duration-300 ease-in-out">Contact</a>
+            <div class="flex items-center space-x-4 border border-white text-white rounded-full py-2 px-4">
+              <!-- Search Icon -->
+              <button class="focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white" viewBox="0 0 256 256">
+                  <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+              </button>
+
+              <!-- Dropdown Button -->
+              <div class="relative flex items-center space-x-1">
+                <!-- Language Text -->
+                <span>ID</span>
+
+                <!-- Dropdown Arrow -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+
+                <!-- Indonesian Flag -->
+                <div class="w-5 h-5 rounded-full overflow-hidden">
+                  <div class="w-full h-1/2 bg-red-600"></div>
+                  <div class="w-full h-1/2 bg-white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="fixed top-0 left-0 h-full bg-black z-20 w-1/2 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+        <div class="flex justify-end p-4">
+          <button id="close-menu" class="text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile Links positioned at the top -->
+        <div class="flex flex-col items-start justify-start h-full space-y-12 pl-4 pt-8">
+          <a href="#" class="text-white text-[18px]">Home</a>
+          <a href="#" class="text-white text-[18px]">About</a>
+          <a href="#" class="text-white text-[18px]">Services</a>
+          <a href="#" class="text-white text-[18px]">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="mt-32 w-full">
+      <div class="container flex flex-col w-full mx-auto">
+        <div class="title flex items-center flex-col w-[608px] mx-auto">
+          <h2 class="font-bold text-[40px]">Berita Kami</h2>
+          <p class="text-center text-[16px] text-slate-400">Lörem ipsum fått nemire laning utom os diatt kates famyt. Egor. Auton niment dekasest, terratopi. Porat jyst orat.</p>
+        </div>
+
+        <div class="content flex flex-col w-full justify-center items-center mt-12">
+          <div class="w-full flex justify-between">
+            <div class="border border-slate-500 rounded-full w-fit px-4 py-2 flex cursor-pointer hover:border hover:border-sky-600">
+              <p class="text-slate-500 text-[16px]">Semua Kategori</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-500" viewBox="0 0 256 256">
+                <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+              </svg>
+            </div>
+            <div class="border border-slate-500 rounded-full w-[295px] px-4 py-2 flex justify-between cursor-pointer hover:border hover:border-sky-600">
+              <p class="text-slate-500 text-[16px]">Search...</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-500" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="berita w-full flex mt-24 gap-6">
+            <div class="right w-1/2">
+              <img src="./../src/images/right-berita.png" alt="" />
+              <div class="caption flex flex-col gap-4 mt-4">
+                <h2 class="font-bold text-[32px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Kerja Sama pendandatanganan MoU Kapal Api Group dan Universitas Gadjah Mada</h2>
+                <p class="font-light text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+
+            <div class="left w-1/2 flex flex-wrap gap-4">
+              <div class="card w-[295px]">
+                <img src="./../src/images/berita-section1.png" alt="" />
+                <div class="caption flex flex-col">
+                  <h4 class="text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                  <p class="text-slate-400 text-[16px]">Artikel / 27 Nov 2023</p>
+                </div>
+              </div>
+              <div class="card w-[295px]">
+                <img src="./../src/images/berita-section1.png" alt="" />
+                <div class="caption flex flex-col">
+                  <h4 class="text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                  <p class="text-slate-400 text-[16px]">Artikel / 27 Nov 2023</p>
+                </div>
+              </div>
+              <div class="card w-[295px]">
+                <img src="./../src/images/berita-section1.png" alt="" />
+                <div class="caption flex flex-col">
+                  <h4 class="text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                  <p class="text-slate-400 text-[16px]">Artikel / 27 Nov 2023</p>
+                </div>
+              </div>
+              <div class="card w-[295px]">
+                <img src="./../src/images/berita-section1.png" alt="" />
+                <div class="caption flex flex-col">
+                  <h4 class="text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                  <p class="text-slate-400 text-[16px]">Artikel / 27 Nov 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-bottom mt-24 flex flex-wrap justify-center gap-6">
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+            <div class="news w-[400px]">
+              <img src="./../src/images/news-bottom.png" alt="" />
+              <div class="caption flex flex-col gap-3 mt-3">
+                <h4 class="font-bold text-[24px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
+                <p class="font-light text-[16px] text-slate-400">Artikel / 27 Nov 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="w-full bg-gray-900 px-12 py-8 mt-24">
+      <div class="container flex flex-col md:flex-row justify-between">
+        <div class="first w-fit md:w-[400px] flex flex-col gap-4">
+          <img src="./../src/images/logo.png" alt="" class="w-[150px]" />
+          <p class="text-white text-[16px] font-light">Kapal Api Global adalah perusahaan induk dengan peran strategis dan investasi yang bertindak sebagai pembuat kebijakan & konsolidator unit bisnis strategis Grup Kapal Api</p>
+          <div class="sosmed flex gap-4 mt-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-6" viewBox="0 0 256 256">
+              <path
+                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-6" viewBox="0 0 256 256">
+              <path
+                d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"></path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-6" viewBox="0 0 256 256">
+              <path
+                d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-6" viewBox="0 0 256 256">
+              <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="second flex flex-col gap-2">
+          <h4 class="font-bold text-white text-[16px] mt-6">About Us</h4>
+          <p class="text-white text-[16px] font-light mt-4">Profile</p>
+          <p class="text-white text-[16px] font-light">Visi & Misi</p>
+        </div>
+
+        <div class="third flex flex-col gap-2">
+          <h4 class="font-bold text-white text-[16px] mt-6">Career</h4>
+          <p class="text-white text-[16px] font-light mt-4">PT Santos Jaya Abadi</p>
+          <p class="text-white text-[16px] font-light">Overseas Business</p>
+          <p class="text-white text-[16px] font-light">Excelso</p>
+          <p class="text-white text-[16px] font-light">PT Fastra Buana</p>
+          <p class="text-white text-[16px] font-light">PT Santos Premium Krimer</p>
+        </div>
+
+        <div class="container-last flex flex-col gap-6 w-[315px]">
+          <h2 class="text-white font-bold mt-6">Contact</h2>
+          <div class="location flex gap-4 items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-12 mt-1" viewBox="0 0 256 256">
+              <path
+                d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path>
+            </svg>
+            <p class="text-white">Jalan taman jatibaru barat No. 2,Cideng, Kota Jakarta Pusat DKI Jakarta 10150</p>
+          </div>
+          <div class="phone flex gap-4 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-white" viewBox="0 0 256 256">
+              <path
+                d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path>
+            </svg>
+            <p class="text-white">+62 8123-2321-1234</p>
+          </div>
+          <div class="phone flex gap-4 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-white" viewBox="0 0 256 256">
+              <path
+                d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
+            </svg>
+            <p class="text-white">hello@kapalapi.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-content w-full flex justify-between mt-24 flex-col md:flex-row gap-12 items-center md:items-start">
+        <p class="text-white text-[16px] font-light">kapalapigroup 2023. All rights reserved.</p>
+        <div class="right flex gap-2 md:flex-row">
+          <p class="text-white text-[16px] font-light">Imprint</p>
+          <p class="text-white text-[16px] font-light">|</p>
+          <p class="text-white text-[16px] font-light">Generelles Geschäftbedingungen</p>
+          <p class="text-white text-[16px] font-light">|</p>
+          <p class="text-white text-[16px] font-light">Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./../js/script.js"></script>
+  </body>
+</html>
