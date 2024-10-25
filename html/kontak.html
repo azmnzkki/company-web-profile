@@ -17,7 +17,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- aos end -->
   </head>
-  <body>
+  <body class="bg-slate-100">
     <!-- Navbar -->
     <nav class="bg-black shadow-md fixed w-full top-0 z-10">
       <div class="max-w-7xl py-2 mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,144 +89,132 @@
       </div>
     </nav>
 
-    <section class="w-full mt-32">
+    <section class="mt-24 w-full" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
       <!-- container -->
-      <div class="flex flex-col w-full">
+      <div class="w-full flex flex-col mx-auto md:px-32">
         <!-- title -->
-        <div class="title w-fit mx-auto md:w-[608px] px-6 mb-8 md:mb-0" data-aos="zoom-in">
-          <h2 class="font-bold text-[40px] text-center">Berita Kami</h2>
-          <p class="text-slate-400 font-light text-[16px] text-center">Lörem ipsum fått nemire laning utom os diatt kates famyt. Egor. Auton niment dekasest, terratopi. Porat jyst orat.</p>
+        <div class="title flex flex-col justify-center items-center p-6">
+          <h2 class="font-bold text-[40px]">Kontak Kami</h2>
+          <p class="text-slate-500 text-[16px] font-light w-fit md:w-[608px] text-center">Lörem ipsum fått nemire laning utom os diatt kates famyt. Egor. Auton niment dekasest, terratopi. Porat jyst orat.</p>
         </div>
 
-        <!-- buttons -->
-        <div class="buttons w-full flex flex-col md:flex-row gap-6 justify-between px-6 py-6 md:px-14 md:py-12" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-          <button class="flex gap-3 border border-slate-500 px-4 py-2 rounded-full items-center w-fit">
-            <p class="text-slate-500 text-sm font-light">Semua Kategori</p>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-500" viewBox="0 0 256 256">
-              <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
-            </svg>
+        <!-- form -->
+
+        <form class="mx-auto bg-slate-50 p-12 w-full rounded-xl">
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="email"
+              name="floating_email"
+              id="floating_email"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required />
+            <label
+              for="floating_email"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Email address</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="password"
+              name="floating_password"
+              id="floating_password"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required />
+            <label
+              for="floating_password"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Password</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="password"
+              name="repeat_password"
+              id="floating_repeat_password"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required />
+            <label
+              for="floating_repeat_password"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Confirm password</label
+            >
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_first_name"
+                id="floating_first_name"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_first_name"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >First name</label
+              >
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_last_name"
+                id="floating_last_name"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_last_name"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Last name</label
+              >
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="floating_phone"
+                id="floating_phone"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_phone"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Phone number (123-456-7890)</label
+              >
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_company"
+                id="floating_company"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_company"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Company (Ex. Google)</label
+              >
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Submit
           </button>
-
-          <button class="flex justify-between items-center gap-3 border border-slate-500 w-fit md:w-[295px] px-6 py-2 rounded-full">
-            <p class="text-slate-500 text-sm font-light">Search...</p>
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-slate-500" viewBox="0 0 256 256">
-              <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-            </svg>
-          </button>
-        </div>
-
-        <!-- berita -->
-        <div class="flex flex-col md:flex-row w-full p-6 justify-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-          <div class="first flex flex-col justify-center md:justify-start w-full md:w-1/2 mx-auto">
-            <img src="./../src/images/right-berita.png" alt="" />
-            <div class="title flex flex-col gap-3 mt-3">
-              <h2 class="font-bold text-[20px] md:text-[32px] hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Kerja Sama pendandatanganan MoU Kapal Api Group dan Universitas Gadjah Mada</h2>
-              <p class="text-slate-500 text-[16px]">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-
-          <div class="second gap-6 justify-center items-center flex flex-wrap w-full md:w-1/2 mt-6 md:mt-0">
-            <div class="card w-[150px] md:w-[295px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-              <img src="./../src/images/berita-section1.png" alt="" />
-              <div class="title flex flex-col gap-2">
-                <h4 class="text-[14px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-                <p class="text-xs md:text-sm text-slate-500">Artikel / 27 Nov 2023</p>
-              </div>
-            </div>
-            <div class="card w-[150px] md:w-[295px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-              <img src="./../src/images/berita-section1.png" alt="" />
-              <div class="title flex flex-col gap-2">
-                <h4 class="text-[14px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-                <p class="text-xs md:text-sm text-slate-500">Artikel / 27 Nov 2023</p>
-              </div>
-            </div>
-            <div class="card w-[150px] md:w-[295px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-              <img src="./../src/images/berita-section1.png" alt="" />
-              <div class="title flex flex-col gap-2">
-                <h4 class="text-[14px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-                <p class="text-xs md:text-sm text-slate-500">Artikel / 27 Nov 2023</p>
-              </div>
-            </div>
-            <div class="card w-[150px] md:w-[295px]" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-              <img src="./../src/images/berita-section1.png" alt="" />
-              <div class="title flex flex-col gap-2">
-                <h4 class="text-[14px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-                <p class="text-xs md:text-sm text-slate-500">Artikel / 27 Nov 2023</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- blog -->
-        <div class="w-full flex flex-wrap px-4 gap-6 justify-center">
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-          <div class="card md:w-[400px]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-            <img src="./../src/images/news-bottom.png" alt="" />
-            <div class="title gap-3 md:gap-6 mt-2">
-              <h4 class="text-[16px] md:text-[24px] font-bold hover:underline hover:underline-offset-4 hover:text-sky-600 cursor-pointer">Menjadi Bagian diantara kami dengan mengikuti beberapa seleksi saja</h4>
-              <p class="text-slate-500 text-xs md:text-sm mt-2">Artikel / 27 Nov 2023</p>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
 
     <!-- footer -->
+
     <footer class="w-full bg-gray-900 px-12 py-8 mt-24" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <div class="container flex flex-col md:flex-row justify-between">
         <div class="first w-fit md:w-[400px] flex flex-col gap-4">
